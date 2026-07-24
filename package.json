@@ -1,0 +1,22 @@
+{
+  "name": "signalk-hook-shark",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Test fixture plugin for signalk-server: verifies that AppStore/npm plugin installation actually blocks lifecycle scripts (own + dependency's). Not a real plugin — do not publish.",
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-category-utility"
+  ],
+  "main": "index.js",
+  "author": "jaffadog",
+  "license": "Apache-2.0",
+  "scripts": {
+    "preinstall": "node scripts/fire.js preinstall",
+    "install": "node scripts/fire.js install",
+    "postinstall": "node scripts/fire.js postinstall",
+    "prepare": "node scripts/fire.js prepare"
+  },
+  "dependencies": {
+    "evil-dep": "file:./evil-dep"
+  }
+}

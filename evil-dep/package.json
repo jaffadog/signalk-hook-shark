@@ -1,0 +1,9 @@
+{
+  "name": "evil-dep",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Fixture dependency simulating a compromised transitive package that tries to run code via postinstall when signalk-hook-shark is installed.",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  }
+}
